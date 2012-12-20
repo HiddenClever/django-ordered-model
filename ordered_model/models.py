@@ -8,7 +8,7 @@ class OrderedModel(models.Model):
     Provides an ``order`` field.
     """
     
-    order = models.PositiveIntegerField()
+    order = models.PositiveIntegerField(blank=True)
     
     class Meta:
         abstract = True
