@@ -8,7 +8,7 @@ class OrderedModel(models.Model):
     Provides an ``order`` field.
     """
     
-    order = models.PositiveIntegerField(blank=True)
+    order = models.PositiveIntegerField(blank=True, help_text="Leave blank to auto-generate order number.")
     
     class Meta:
         abstract = True
